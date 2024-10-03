@@ -188,7 +188,7 @@ class Bike:
                 print("The max number of gear is 15.  ")
 
             else:
-                print("The gear value must be over 1):  "
+               print("The gear value must be over 1):  "
                      f"The current gear will be set back to {self.__currentGear}")
 
         except Exception as e:
@@ -216,8 +216,6 @@ class Bike:
         try:
             brakeType = str(brakeType)
             if brakeType == "electric brakes":
-                self.__brakeType = brakeType
-
                 print('That is the incorrect type of brakes.' 
                       'These bikes can only have "hand brakes" or "foot brakes."')
 

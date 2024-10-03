@@ -131,7 +131,7 @@ try:
 
     ###############################################
     # 4) Max Gear
-    maxGear = int(input("Please enter a gear value of gear (must be over 15): "))
+    maxGear = int(input("Test: Please enter a gear value of gear (must be over 15): "))
     giant.setNumberOfGears(maxGear)
     print(f"The Current Gear is: {giant.getCurrentGear()}")
     input("Press [Enter] to continue\n")
@@ -139,7 +139,7 @@ try:
 
     ###############################################
     # 4) Minimum Gear
-    minimumGear = int(input("Please enter a small value of gear (must be below 1): "))
+    minimumGear = int(input("Test: Please enter a small value of gear (must be below 1): "))
     giant.setNumberOfGears(minimumGear)
     print(f"The Current Gear is: {giant.getCurrentGear()}")
     input("Press [Enter] to continue\n")
@@ -147,10 +147,15 @@ try:
 
     ###############################################
     # 5) Electric Brakes
-    giant.electricBrake((input('Please enter the brake type (must be “electric brakes”): ')))
+    giant.electricBrake((input('Test: Please enter the brake type (must be “electric brakes”): ')))
 
     input("Press [ENTER] to finish \n")
     print("FINISHED")
+    print(f"The Final Bike information:")
+    print(f"The Number of Gears is: {giant.getNumberOfGears()}")
+    print(f"The Current Gear is: {giant.getCurrentGear()}")
+    print(f"The Number of Wheels is: {giant.getNumberOfWheels()}")
+    print(f"The Brake Type is: {giant.getBrakeType()}")
 
     # Catching exception
 except Exception as e:
